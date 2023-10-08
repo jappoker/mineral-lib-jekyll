@@ -1,0 +1,50 @@
+---
+layout: mineral
+title: Low Albite
+date: 0001-01-01 00:00:00 -0400
+catalog: true
+
+name: Low Albite
+formula: NaAlSi<sub>3</sub>O<sub>8</sub>
+space_group: C-1
+
+lattice_parameters:
+    a (Å): 8.1372
+    b (Å): 12.7870
+    c (Å): 7.1574
+    α (°): 94.245
+    β (°): 116.605
+    γ (°): 87.809
+    volume (Å<sup>3</sup>): 664.037
+
+ineqv_atom_position: 
+    - Na   0.26913   0.98904   0.14894   0.03800
+    - Al1o   0.00890   0.16819   0.20762   0.00811
+    - Si1m   0.00398   0.82043   0.23665   0.00798
+    - Si2o   0.69222   0.11044   0.31589   0.00747
+    - Si2m   0.68162   0.88179   0.36088   0.00773
+    - O(A1)   0.00615   0.13166   0.96889   0.01482
+    - O(A2)   0.59158   0.99706   0.27896   0.00975
+    - O(B)o   0.81370   0.11011   0.19504   0.01330
+    - O(B)m   0.81898   0.85089   0.25629   0.01507
+    - O(C)o   0.01239   0.30185   0.26901   0.01216
+    - O(C)m   0.02327   0.69340   0.22754   0.01165
+    - O(D)o   0.20643   0.10894   0.38631   0.01507
+    - O(D)m   0.18092   0.86801   0.42864   0.01824
+
+coordi_primitive: 
+
+structure_img: 
+cif: |-
+    data_global\n_chemical_name_mineral 'Albite'\nloop_\n_publ_author_name\n'Downs R T'\n'Hazen R M'\n'Finger L W'\n_journal_name_full 'American Mineralogist'\n_journal_volume 79 \n_journal_year 1994\n_journal_page_first 1042\n_journal_page_last 1052\n_publ_section_title\n;\n The high-pressure crystal chemistry of low albite and the origin of the\n pressure dependency of Al-Si ordering\n P = 0, constrained data set\n Note- sample is from Crete\n;\n_database_code_amcsd 0001683\n_chemical_formula_sum 'Na Al Si3 O8'\n_cell_length_a 8.1372\n_cell_length_b 12.7870\n_cell_length_c 7.1574\n_cell_angle_alpha 94.245\n_cell_angle_beta 116.605\n_cell_angle_gamma 87.809\n_cell_volume 664.037\n_exptl_crystal_density_diffrn      2.623\n_symmetry_space_group_name_H-M 'C -1'\nloop_\n_space_group_symop_operation_xyz\n  'x,y,z'\n  '1/2+x,1/2+y,z'\n  '-x,-y,-z'\n  '1/2-x,1/2-y,-z'\nloop_\n_atom_site_label\n_atom_site_fract_x\n_atom_site_fract_y\n_atom_site_fract_z\n_atom_site_U_iso_or_equiv\nNa   0.26913   0.98904   0.14894   0.03800\nAl1o   0.00890   0.16819   0.20762   0.00811\nSi1m   0.00398   0.82043   0.23665   0.00798\nSi2o   0.69222   0.11044   0.31589   0.00747\nSi2m   0.68162   0.88179   0.36088   0.00773\nO(A1)   0.00615   0.13166   0.96889   0.01482\nO(A2)   0.59158   0.99706   0.27896   0.00975\nO(B)o   0.81370   0.11011   0.19504   0.01330\nO(B)m   0.81898   0.85089   0.25629   0.01507\nO(C)o   0.01239   0.30185   0.26901   0.01216\nO(C)m   0.02327   0.69340   0.22754   0.01165\nO(D)o   0.20643   0.10894   0.38631   0.01507\nO(D)m   0.18092   0.86801   0.42864   0.01824\nloop_\n_atom_site_aniso_label\n_atom_site_aniso_U_11\n_atom_site_aniso_U_22\n_atom_site_aniso_U_33\n_atom_site_aniso_U_12\n_atom_site_aniso_U_13\n_atom_site_aniso_U_23\nNa 0.01773 0.05305 0.03721 -0.00484 0.01219 -0.02442\n\n
+
+
+structure_source: 
+    name:
+    url:
+    database_code: _database_code_amcsd 0001683
+
+
+input:
+
+---

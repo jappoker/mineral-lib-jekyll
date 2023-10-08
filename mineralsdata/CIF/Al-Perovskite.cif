@@ -1,0 +1,43 @@
+#======================================================================
+
+# CRYSTAL DATA
+
+#----------------------------------------------------------------------
+
+data_VESTA_phase_1
+
+
+_chemical_name_common                  ''
+_cell_length_a                         8.94600
+_cell_length_b                         9.19000
+_cell_length_c                         13.66100
+_cell_angle_alpha                      90
+_cell_angle_beta                       90
+_cell_angle_gamma                      90
+_space_group_name_H-M_alt              'P b n m'
+_space_group_IT_number                 62
+
+loop_
+_space_group_symop_operation_xyz
+   'x, y, z'
+   '-x, -y, -z'
+   'x+1/2, -y+1/2, -z'
+   '-x+1/2, y+1/2, z'
+   '-x, -y, z+1/2'
+   'x, y, -z+1/2'
+   '-x+1/2, y+1/2, -z+1/2'
+   'x+1/2, -y+1/2, z+1/2'
+
+loop_
+   _atom_site_label
+   _atom_site_occupancy
+   _atom_site_fract_x
+   _atom_site_fract_y
+   _atom_site_fract_z
+   _atom_site_adp_type
+   _atom_site_U_iso_or_equiv
+   _atom_site_type_symbol
+   Al1         1.0     0.510000      0.549000      0.250000     Uiso  0.007850 Al
+   Al2        1.0     0.500000      0.000000      0.000000     Uiso  0.005700 Al
+   O1         1.0     0.142000      0.412000      0.250000     Uiso  0.015200 O
+   O2         1.0     0.173000      0.176000      0.575000     Uiso  0.016460 O

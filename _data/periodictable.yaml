@@ -1,0 +1,430 @@
+-
+  - element: H
+    index: 1
+    class: btn-element-blue
+  - space: 16
+  - element: He
+    index: 2
+    class: btn-element-white
+    disabled: true
+
+
+-
+  - element: Li
+    index: 3
+    class: btn-element-blue
+  - element: Be
+    index: 4
+    class: btn-element-blue
+    disabled: true
+  - space: 4
+  - reset: true
+    space: 2
+  - space: 4
+  - element: B
+    index: 5
+    class: btn-element-yellow
+    disabled: true
+  - element: C
+    index: 6
+    class: btn-element-yellow
+  - element: N
+    index: 7
+    class: btn-element-yellow
+    disabled: true
+  - element: O
+    index: 8
+    class: btn-element-yellow
+  - element: F
+    index: 9
+    class: btn-element-yellow
+  - element: Ne
+    index: 10
+    class: btn-element-white
+    disabled: true
+
+-
+  - element: Na
+    index: 11
+    class: btn-element-blue
+  - element: Mg
+    index: 12
+    class: btn-element-blue
+  - space: 10
+  - element: Al
+    index: 13
+    class: btn-element-yellow
+  - element: Si
+    index: 14
+    class: btn-element-yellow
+  - element: P
+    index: 15
+    class: btn-element-yellow
+    disabled: true
+  - element: S
+    index: 16
+    class: btn-element-yellow
+    disabled: true
+  - element: Cl
+    index: 17
+    class: btn-element-yellow
+    disabled: true
+  - element: Ar
+    index: 18
+    class: btn-element-white
+    disabled: true
+
+-
+  - element: K
+    index: 19
+    class: btn-element-blue
+  - element: Ca
+    index: 20
+    class: btn-element-blue
+  - element: Sc
+    index: 21
+    class: btn-element-red
+    disabled: true
+  - element: Ti
+    index: 22
+    class: btn-element-red
+  - element: V
+    index: 23
+    class: btn-element-red
+    disabled: true
+  - element: Cr
+    index: 24
+    class: btn-element-red
+  - element: Mn
+    index: 25
+    class: btn-element-red
+  - element: Fe
+    index: 26
+    class: btn-element-red
+  - element: Co
+    index: 27
+    class: btn-element-red
+    disabled: true
+  - element: Ni
+    index: 28
+    class: btn-element-red
+    disabled: true
+  - element: Cu
+    index: 29
+    class: btn-element-red
+    disabled: true
+  - element: Zn
+    index: 30
+    class: btn-element-red
+    disabled: true
+  - element: Ga
+    index: 31
+    class: btn-element-yellow
+    disabled: true
+  - element: Ge
+    index: 32
+    class: btn-element-yellow
+    disabled: true
+  - element: As
+    index: 33
+    class: btn-element-yellow
+    disabled: true
+  - element: Se
+    index: 34
+    class: btn-element-yellow
+    disabled: true
+  - element: Br
+    index: 35
+    class: btn-element-yellow
+    disabled: true
+  - element: Kr
+    index: 36
+    class: btn-element-white
+    disabled: true
+
+-
+  - element: Rn
+    index: 37
+    class: btn-element-blue
+    disabled: true
+  - element: Sr
+    index: 38
+    class: btn-element-blue
+    disabled: true
+  - element: Y
+    index: 39
+    class: btn-element-red
+    disabled: true
+  - element: Zr
+    index: 40
+    class: btn-element-red
+    disabled: true
+  - element: Nb
+    index: 41
+    class: btn-element-red
+    disabled: true
+  - element: Mo
+    index: 42
+    class: btn-element-red
+    disabled: true
+  - element: Tc
+    index: 43
+    class: btn-element-red
+    disabled: true
+  - element: Ru
+    index: 44
+    class: btn-element-red
+    disabled: true
+  - element: Rh
+    index: 45
+    class: btn-element-red
+    disabled: true
+  - element: Pd
+    index: 46
+    class: btn-element-red
+    disabled: true
+  - element: Ag
+    index: 47
+    class: btn-element-red
+    disabled: true
+  - element: Cd
+    index: 48
+    class: btn-element-red
+    disabled: true
+  - element: In
+    index: 49
+    class: btn-element-yellow
+    disabled: true
+  - element: Sn
+    index: 50
+    class: btn-element-yellow
+    disabled: true
+  - element: Sb
+    index: 51
+    class: btn-element-yellow
+    disabled: true
+  - element: Te
+    index: 52
+    class: btn-element-yellow
+    disabled: true
+  - element: I
+    index: 53
+    class: btn-element-yellow
+    disabled: true
+  - element: Xe
+    index: 54
+    class: btn-element-white
+    disabled: true
+
+-
+  - element: Cs
+    index: 55
+    class: btn-element-blue
+    disabled: true
+  - element: Ba
+    index: 56
+    class: btn-element-blue
+    disabled: true
+  - element: La
+    index: 57
+    class: btn-element-red
+    disabled: true
+  - element: Hf
+    index: 72
+    class: btn-element-red
+    disabled: true
+  - element: Ta
+    index: 73
+    class: btn-element-red
+    disabled: true
+  - element: W
+    index: 74
+    class: btn-element-red
+    disabled: true
+  - element: Re
+    index: 75
+    class: btn-element-red
+    disabled: true
+  - element: Os
+    index: 76
+    class: btn-element-red
+    disabled: true
+  - element: Ir
+    index: 77
+    class: btn-element-red
+    disabled: true
+  - element: Pt
+    index: 78
+    class: btn-element-red
+    disabled: true
+  - element: Au
+    index: 79
+    class: btn-element-red
+    disabled: true
+  - element: Hg
+    index: 80
+    class: btn-element-red
+    disabled: true
+  - element: Tl
+    index: 81
+    class: btn-element-yellow
+    disabled: true
+  - element: Pb
+    index: 82
+    class: btn-element-yellow
+    disabled: true
+  - element: Bi
+    index: 83
+    class: btn-element-yellow
+    disabled: true
+  - element: Po
+    index: 84
+    class: btn-element-yellow
+    disabled: true
+  - element: At
+    index: 85
+    class: btn-element-yellow
+    disabled: true
+  - element: Rn
+    index: 86
+    class: btn-element-white
+    disabled: true
+
+-
+  - element: Fr
+    index: 87
+    class: btn-element-blue
+    disabled: true
+  - element: Ra
+    index: 88
+    class: btn-element-blue
+    disabled: true
+  - element: Ac
+    index: 89
+    class: btn-element-red
+    disabled: true
+
+- 
+  - space: 3
+  - element: Ce
+    index: 58
+    class: btn-element-green
+    disabled: true
+  - element: Pr
+    index: 59
+    class: btn-element-green
+    disabled: true
+  - element: Nd
+    index: 60
+    class: btn-element-green
+    disabled: true
+  - element: Pm
+    index: 61
+    class: btn-element-green
+    disabled: true
+  - element: Sm
+    index: 62
+    class: btn-element-green
+    disabled: true
+  - element: Eu
+    index: 63
+    class: btn-element-green
+    disabled: true
+  - element: Gd
+    index: 64
+    class: btn-element-green
+    disabled: true
+  - element: Tb
+    index: 65
+    class: btn-element-green
+    disabled: true
+  - element: Dy
+    index: 66
+    class: btn-element-green
+    disabled: true
+  - element: Ho
+    index: 67
+    class: btn-element-green
+    disabled: true
+  - element: Er
+    index: 68
+    class: btn-element-green
+    disabled: true
+  - element: Tm
+    index: 69
+    class: btn-element-green
+    disabled: true
+  - element: Yb
+    index: 70
+    class: btn-element-green
+    disabled: true
+  - element: Lu
+    index: 71
+    class: btn-element-green
+    disabled: true
+  - space: 1
+
+-
+  - space: 3
+  - element: Th
+    index: 90
+    class: btn-element-green
+    disabled: true
+  - element: Pa
+    index: 91
+    class: btn-element-green
+    disabled: true
+  - element: U
+    index: 92
+    class: btn-element-green
+    disabled: true
+  - element: Np
+    index: 93
+    class: btn-element-green
+    disabled: true
+  - element: Pu
+    index: 94
+    class: btn-element-green
+    disabled: true
+  - element: Am
+    index: 95
+    class: btn-element-green
+    disabled: true
+  - element: Cm
+    index: 96
+    class: btn-element-green
+    disabled: true
+  - element: Bk
+    index: 97
+    class: btn-element-green
+    disabled: true
+  - element: Cf
+    index: 98
+    class: btn-element-green
+    disabled: true
+  - element: Es
+    index: 99
+    class: btn-element-green
+    disabled: true
+  - element: Fm
+    index: 100
+    class: btn-element-green
+    disabled: true
+  - element: Md
+    index: 101
+    class: btn-element-green
+    disabled: true
+  - element: "No"
+    index: 102
+    class: btn-element-green
+    disabled: true
+  - element: Lr
+    index: 103
+    class: btn-element-green
+    disabled: true
+  - space: 1
+
+
+
+
+

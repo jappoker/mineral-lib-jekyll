@@ -1,0 +1,224 @@
+.not-visible {
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: height 1s ease;
+    -webkit-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 1s ease, opacity 0.3s linear;
+}
+
+.mineral-filter-choice {
+    /* height: 430px; */
+    -moz-transition: height 1s ease;
+    -webkit-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 0.5s ease, opacity 0.4s linear;
+}
+
+.min-height {
+    min-height: 450px;
+}
+
+.not-visible.mineral-filter-choice {
+    height: 0px;
+}
+
+.mineral-block {
+    transition: height 0.5s ease, opacity 0.4s linear;
+}
+
+.not-visible.mineral-block {
+    height: 0px;
+    transition: height 0.5s ease;
+}
+
+.mineral-filter-panel {}
+
+.btn-element-blue button {
+    background-color: #a7e2ff;
+}
+
+.btn-element-blue button:hover {
+    /* background-color: #66ccff; */
+    background-color: #34a74f;
+    color: white;
+}
+
+.btn-element-white button {
+    background-color: #d5d5d5;
+}
+
+.btn-element-white button:hover {
+    /* background-color: #BABABA; */
+    background-color: #34a74f;
+    color: white;
+}
+
+.btn-element-yellow button {
+    background-color: #ffeb77;
+}
+
+.btn-element-yellow button:hover {
+    /* background-color: #ffe44b; */
+    background-color: #34a74f;
+    color: white;
+}
+
+.btn-element-red button {
+    background-color: #fea9a9;
+}
+
+.btn-element-red button:hover {
+    /* background-color: #fc8d8d; */
+    background-color: #34a74f;
+    color: white;
+}
+
+.btn-element-green button {
+    background-color: #a9fed6;
+}
+
+.btn-element-green button:hover {
+    /* background-color: #8efcc9; */
+    background-color: #34a74f;
+    color: white;
+}
+
+.btn-element-purple button {
+    background-color: #a78ade;
+}
+
+.btn-element-purple button:hover {
+    /* background-color: #8efcc9; */
+    background-color: #34a74f;
+    color: white;
+}
+
+.selected button {
+    background-color: #28a745;
+    color: white;
+}
+
+.selected button:hover {
+    background-color: #248f3d;
+    color: white;
+}
+
+.btn-element.disabled:hover {
+    background-color: #BABABA;
+    color: #212529;
+}
+
+.btn-element div {
+    font-weight: bold;
+}
+
+.btn-element.disabled div {
+    font-weight: normal;
+}
+
+
+
+.btn-element {
+    /* background-color: steelblue; */
+    width: 100%;
+    height: 100%;
+}
+
+.btn-element {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-element {
+        transition: none;
+    }
+}
+
+.btn-element:hover {
+    text-decoration: none;
+}
+
+.btn-element:focus,
+.btn.focus {
+    outline: 0;
+}
+
+.btn-element.disabled,
+.btn-element:disabled {
+    opacity: 0.55;
+}
+
+a.btn-element.disabled,
+fieldset:disabled a.btn {
+    pointer-events: none;
+}
+
+.periodic-table {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+table.periodic-table th {}
+
+table.periodic-table td {
+    width: 50px;
+    font-size: 10px;
+}
+
+table.periodic-table td div {
+    font-size: 14px;
+}
+
+.btn-reset {
+    height: 42px
+}
+
+/* Media Query for tablets and larger */
+@media (min-width: 481px)and (max-width: 768px) {
+    table.periodic-table td {
+        width: 30px;
+        font-size: 8px;
+    }
+
+    table.periodic-table td div {
+        font-size: 10px;
+    }
+
+    .btn-reset {
+        height: 30px
+    }
+
+    button {
+        padding: 1px 4px;
+    }
+}
+
+@media (max-width: 481px) {
+    table.periodic-table td {
+        width: 15px;
+        font-size: 5px;
+    }
+
+    table.periodic-table td div {
+        font-size: 7px;
+    }
+
+    .btn-reset {
+        height: 20px
+    }
+
+    button {
+        padding: 1px 2px;
+    }
+}

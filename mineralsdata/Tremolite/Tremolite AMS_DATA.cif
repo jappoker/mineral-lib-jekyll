@@ -1,0 +1,80 @@
+data_global
+_chemical_name_mineral 'Tremolite'
+loop_
+_publ_author_name
+'Merli M'
+'Ungaretti L'
+'Oberti R'
+_journal_name_full 'American Mineralogist'
+_journal_volume 85 
+_journal_year 2000
+_journal_page_first 532
+_journal_page_last 542
+_publ_section_title
+;
+ Leverage analysis and structure refinement of minerals
+ Sample: from Val Tremola 9527
+;
+_database_code_amcsd 0002418
+_chemical_formula_sum 'Si8 Mg5 Ca2 H2 O24'
+_cell_length_a 9.8359
+_cell_length_b 18.0450
+_cell_length_c 5.2752
+_cell_angle_alpha 90
+_cell_angle_beta 104.750
+_cell_angle_gamma 90
+_cell_volume 905.435
+_exptl_crystal_density_diffrn      2.980
+_symmetry_space_group_name_H-M 'C 1 2/m 1'
+loop_
+_space_group_symop_operation_xyz
+  'x,y,z'
+  '1/2+x,1/2+y,z'
+  'x,-y,z'
+  '1/2+x,1/2-y,z'
+  '-x,y,-z'
+  '1/2-x,1/2+y,-z'
+  '-x,-y,-z'
+  '1/2-x,1/2-y,-z'
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+SiT1   0.28060   0.08390   0.29720 ?
+SiT2   0.28840   0.17110  -0.19530 ?
+MgM1   0.00000   0.08780   0.50000 ?
+MgM2   0.00000   0.17650   0.00000 ?
+MgM3   0.00000   0.00000   0.00000 ?
+CaM4   0.00000   0.27800   0.50000 ?
+H   0.19600   0.00000   0.76400   0.00015
+O1   0.11190   0.08570   0.21800 ?
+O2   0.11870   0.17090   0.72440 ?
+O3   0.10850   0.00000   0.71550 ?
+O4   0.13510   0.25190   0.20690 ?
+O5   0.34660   0.13440   0.10050 ?
+O6   0.34400   0.11880   0.58910 ?
+O7   0.33770   0.00000   0.29280 ?
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+SiT1 0.00421 0.00403 0.00460 -0.00037 0.00105 -0.00017
+SiT2 0.00423 0.00464 0.00443 -0.00078 0.00124 -0.00018
+MgM1 0.00656 0.00535 0.00577 0.00000 0.00191 0.00000
+MgM2 0.00608 0.00557 0.00628 0.00000 0.00190 0.00000
+MgM3 0.00656 0.00491 0.00576 0.00000 0.00125 0.00000
+CaM4 0.00970 0.00605 0.01011 0.00000 0.00610 0.00000
+O1 0.00447 0.00607 0.00649 -0.00030 0.00117 -0.00019
+O2 0.00459 0.00722 0.00646 -0.00037 0.00140 -0.00045
+O3 0.00834 0.00656 0.00733 0.00000 0.00218 0.00000
+O4 0.00872 0.00579 0.00860 -0.00276 0.00313 -0.00083
+O5 0.00664 0.00921 0.00646 -0.00065 0.00165 0.00271
+O6 0.00680 0.00878 0.00592 0.00016 0.00139 -0.00256
+O7 0.00787 0.00407 0.01318 0.00000 0.00294 0.00000
+

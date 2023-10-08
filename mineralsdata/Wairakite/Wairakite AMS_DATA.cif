@@ -1,0 +1,70 @@
+data_global
+_chemical_name_mineral 'Wairakite'
+loop_
+_publ_author_name
+'Henderson C M B'
+'Bell A M T'
+'Kohn S C'
+'Page C S'
+_journal_name_full 'Mineralogical Magazine'
+_journal_volume 62 
+_journal_year 1998
+_journal_page_first 165
+_journal_page_last 178
+_publ_section_title
+;
+ Leucite-pollucite structure-type variability and the structure of a
+ synthetic end-member calcium wairakite (CaAl2Si4O12*2(H2O))
+;
+_database_code_amcsd 0014533
+_chemical_formula_sum 'Ca.5 Al Si2 O7 H2'
+_cell_length_a 13.694
+_cell_length_b 13.644
+_cell_length_c 13.576
+_cell_angle_alpha 90.
+_cell_angle_beta 90.46
+_cell_angle_gamma 90
+_cell_volume 2536.471
+_exptl_crystal_density_diffrn      2.275
+_symmetry_space_group_name_H-M 'I 2/a'
+loop_
+_space_group_symop_operation_xyz
+  'x,y,z'
+  '1/2+x,1/2+y,1/2+z'
+  '1/2-x,y,-z'
+  '-x,1/2+y,1/2-z'
+  '1/2+x,-y,z'
+  '+x,1/2-y,1/2+z'
+  '-x,-y,-z'
+  '1/2-x,1/2-y,1/2-z'
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ca12A   0.25000   0.12700   0.00000   0.24250   0.03673
+Ca12B   0.75000   0.38500   0.00000   0.19750   0.03673
+Ca2   0.01100   0.24800   0.11800   0.78000   0.03673
+Al2A   0.17000   0.41600   0.13900   1.00000   0.00367
+Al2B   0.84400   0.08800   0.11900   1.00000   0.00367
+Si11A   0.11700   0.15500   0.41900   1.00000   0.00367
+Si11B   0.87700   0.34100   0.40700   1.00000   0.00367
+Si12A   0.42300   0.13000   0.15300   1.00000   0.00367
+Si12B   0.59100   0.36700   0.16400   1.00000   0.00367
+O11A   0.11000   0.35000   0.23100   1.00000   0.00405
+O11B   0.90700   0.13800   0.21700   1.00000   0.00405
+O12A   0.38500   0.13800   0.46200   1.00000   0.00405
+O12B   0.59900   0.35500   0.47700   1.00000   0.00405
+O21A   0.20800   0.11600   0.35200   1.00000   0.00405
+O21B   0.77700   0.39400   0.37400   1.00000   0.00405
+O22A   0.12800   0.46600   0.39700   1.00000   0.00405
+O22B   0.83400   0.04500   0.36200   1.00000   0.00405
+O31A   0.38700   0.22400   0.08400   1.00000   0.00405
+O31B   0.64500   0.27700   0.11200   1.00000   0.00405
+O32A   0.47700   0.38500   0.14100   1.00000   0.00405
+O32B   0.54500   0.11100   0.17000   1.00000   0.00405
+WatA   0.13700   0.11600   0.13400   1.00000   0.00405
+WatB   0.88000   0.38100   0.11200   1.00000   0.00405
+

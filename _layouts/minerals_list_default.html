@@ -1,0 +1,93 @@
+---
+layout: default_vlab
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead"
+    style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+    {% else %}
+    <header class="masthead">
+        {% endif %}
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="page-heading">
+                        <h1>{{ page.title }}</h1>
+                        {% if page.subtitle %}
+                        <span class="subheading">{{ page.subtitle }}</span>
+                        {% endif %}
+                        <div class="heading-menu">Go to <a class="heading-menu"
+                                href="{{ "/" | relative_url }}">Minerals</a>
+                            <a class="heading-menu" href="{{ "/pplibrary" | relative_url }}">PPLibrary</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto min-height">
+                <div class="mineral-filter-panel">
+                    <div class="" align=center><button id="mineral-filter-toggle" class="btn btn-dark spacingh3"
+                            onclick="toggl_visible();">Chemistry Search</button></div>
+                    <div id="mineral-filter-choice" class="mineral-filter-choice not-visible">
+                        <div id="element-board" class="element-bord">
+                            <table cellpadding=1 cellspacing=1 align="center" class="periodic-table">
+                                {% for line in site.data.periodictable %}
+                                <tr>
+                                    {% for item in line %}
+                                    {% if item.reset %}
+                                    <td colspan={{item.space}} class="btn-element-white" align=center id="reset-button"
+                                        height="42">
+                                        <button class="btn-element" onclick="reset_element();">
+                                            <div>Reset</div>
+                                        </button>
+                                    </td>
+                                    {% else %}
+                                    {% if item.space %}
+                                    <td colspan={{item.space}} class=space></td>
+                                    {% else %}
+                                    <td class="{{item.class}} mineral-element" id="{{item.element}}" align=center>
+                                        <button class="btn-element{% if item.disabled %} disabled{% endif %}"
+                                            {% if item.disabled %}onclick=""
+                                            ;{%else%}onclick="toggl_element('{{item.element}}');" {% endif %}>
+                                            {{item.index}}
+                                            <div id="{{item.element}}-text" class="">{{item.element}}</div>
+                                        </button>
+                                    </td>
+                                    {% endif %}
+                                    {% endif %}
+                                    {% endfor %}
+                                </tr>
+                                {% endfor %}
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Home Post List -->
+                <ul>
+                    {% for post in site.posts reversed %}
+
+                    <li id="{{post.name}}" class="mineral-block">
+                        <div class=" post-preview">
+                            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                                <h5>{{ post.name }}
+                                    {% if post.formula %}<span class="no-bold mineral-formula">{{post.formula}}</span>
+                                    {% endif %}
+                                </h5>
+                            </a>
+                        </div>
+
+                    </li>
+
+
+                    {% endfor %}
+                </ul>
+
+            </div>
+        </div>
+    </div>

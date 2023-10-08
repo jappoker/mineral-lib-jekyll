@@ -1,0 +1,139 @@
+---
+layout: default_vlab
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead"
+    style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+    {% else %}
+    <header class="masthead">
+        {% endif %}
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="page-heading">
+                        <h1>{{ page.title }}</h1>
+                        {% if page.subtitle %}
+                        <span class="subheading">{{page.subtitle }}</span>
+                        {% endif %}
+                        <div class="heading-menu">Go to <a class="heading-menu"
+                                href="{{ "/" | relative_url }}">Minerals</a>
+                            <a class="heading-menu" href="{{ "/pplibrary" | relative_url }}">PPLibrary</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-md-10 mx-auto min-height">
+                {% capture pplib_header %}{% include pplib/header.md %}{% endcapture %}
+                {{ pplib_header |markdownify }}
+                <div class="mineral-filter-panel">
+                    <h2>Library</h2>
+
+                    <div id="mineral-filter-choice" class="mineral-filter-choice">
+                        <div id="element-board" class="element-bord">
+                            <table cellpadding=1 cellspacing=1 align="center" class="periodic-table">
+                                {% for line in site.data.pplibrary %}
+                                <tr>
+                                    {% for item in line %}
+                                    {% if item.reset %}
+                                    <td colspan={{item.space}} class="btn-element-white" align=center id="reset-button"
+                                        height="42">
+                                        <button class="btn-element" onclick="pplib_reset_element();">
+                                            <div>Reset</div>
+                                        </button>
+                                    </td>
+                                    {% else %}
+                                    {% if item.space %}
+                                    <td colspan={{item.space}} class=space></td>
+                                    {% else %}
+                                    <td class="{{item.class}} mineral-element" id="{{item.element}}" align=center>
+                                        <a href="#pppanel-{{item.element}}" class="smooth-goto">
+                                            <button {% if item.pplib %}class="btn-element"
+                                                onclick="pplib_toggl_element('{{item.element}}');"
+                                                {% else %}class="btn-element disabled" onclick="" {% endif %}>
+                                                {{item.index}}
+                                                <div id="{{item.element}}-text" class="">{{item.element}}</div>
+                                            </button></a>
+                                    </td>
+                                    {% endif %}
+                                    {% endif %}
+                                    {% endfor %}
+                                </tr>
+                                {% endfor %}
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- PPLibrary List -->
+                <div class="min-height">
+                    {% for line in site.data.pplibrary %}
+                    {% for item in line %}
+                    {% if item.element %}
+
+                    <div id="pppanel-{{item.element}}" class="mineral-block not-visible">
+
+                        <!-- <a href="{{item.element}}"><h3>element: {{ item.element }}</h3></a> -->
+                        <h3>element: {{ item.element }}</h3>
+                        <div class="pplib-table-wrapper">
+                            <table class="pplib-table">
+                                <tr>
+                                    <th class="pplib-name">Name</th>
+                                    <th class="pplib-info">Information</th>
+                                    <th class="pplib-info">Tags</th>
+                                    <th class="pplib-download">Download</th>
+                                </tr>
+                                {% for pp in item.pplib %}
+                                <tr>
+                                    <td>{{pp.name}}</td>
+                                    <td>{{pp.info}}</td>
+                                    <td>
+                                        <div>{% for tag in pp.tags %}<button class="pp-tag pp-tag-{{tag}}" type="button"
+                                                data-toggle="popover" title="{{tag}}"
+                                                data-content="{% for item in site.data.pptags %}{% if item.name == tag %}{{item.info}}{% endif %}{% endfor%}">{{tag}}</button>{% endfor %}
+                                        </div>
+                                    </td>
+                                    <td><a href="{% if pp.filedir %}{{pp.filedir | relative_url}}{% endif %}{% if pp.fileurl%}{{pp.fileurl}}{% endif %}"
+                                            download>
+                                            <button class="btn-element btn-link"><i class="fas fa-file-download"></i>
+                                                Download</button>
+                                        </a></td>
+
+                                </tr>
+
+                                {% endfor %}
+                            </table>
+                        </div>
+                        {% if item.description %}<span
+                            class="no-bold mineral-formula">{{item.description | markdownify}}</span>{% endif %}
+
+                        <hr>
+
+
+
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                    {% endfor %}
+
+                    <h3>Tags & Descriptions</h3>
+                    {% for item in site.data.pptags %}
+                    <div id="tag-{{item.name}}">
+                        <button class="pp-tag pp-tag-{{item.name}}">{{item.name}}</button><span
+                            style="font-size: 16px;">{{item.info}}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+
+
+            </div>
+        </div>
+    </div>

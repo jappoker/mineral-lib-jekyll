@@ -1,0 +1,120 @@
+exchange:
+    coin: 666.66666666667
+    energy: 3
+    diamond: 1
+    ticket: 0.0083333333333
+    goldkey: 0.05
+    silverkey: 0.125
+    goldwatch: 0.0333333333333
+    silverwatch: 0.11111111111111
+
+bundles:
+  - name: 
+    coin:
+    energy:
+    diamond:
+    ticket:
+    goldkey:
+    silverkey:
+    goldwatch:
+    silverwatch:
+    price:
+
+  - name: 体力(小)
+    coin:
+    energy: 158
+    diamond: 50
+    ticket:
+    goldkey:
+    silverkey:
+    goldwatch:
+    silverwatch:
+    price: 18
+
+  - name: 体力(大)
+    coin:
+    energy: 888
+    diamond: 300
+    ticket:
+    goldkey:
+    silverkey:
+    goldwatch:
+    silverwatch:
+    price: 88
+
+  - name: 金币(小)
+    coin: 51888
+    energy:
+    diamond: 50
+    ticket:
+    goldkey:
+    silverkey:
+    goldwatch:
+    silverwatch:
+    price: 18
+
+  - name: 金币(大)
+    coin: 288888
+    energy:
+    diamond: 300
+    ticket:
+    goldkey:
+    silverkey:
+    goldwatch:
+    silverwatch:
+    price: 88
+
+  - name: 钻石卡
+    coin:
+    energy: 
+    diamond: 30
+    ticket:
+    goldkey:
+    silverkey:
+    goldwatch: 
+    silverwatch: 8
+    price: 3
+
+  - name: 特权卡1
+    coin:
+    energy: 20
+    diamond: 60
+    ticket:
+    goldkey:
+    silverkey:
+    goldwatch: 5
+    silverwatch:
+    price: 6
+
+  - name: 特权卡2
+    coin: 30000
+    energy: 
+    diamond: 120
+    ticket:
+    goldkey: 8
+    silverkey: 16
+    goldwatch: 
+    silverwatch:
+    price: 12
+
+  - name: 周末幻券礼盒  
+    coin: 
+    energy: 
+    diamond: 
+    ticket: 12
+    goldkey: 12
+    silverkey:  30
+    goldwatch: 
+    silverwatch:
+    price: 88
+
+  - name: 升级超值礼包
+    coin: 50000
+    energy: 
+    diamond: 88
+    ticket: 
+    goldkey: 
+    silverkey:  
+    goldwatch: 66
+    silverwatch:
+    price: 88

@@ -1,0 +1,235 @@
+---
+layout: default_vlab
+---
+
+<!-- Page Header -->
+
+<header class="style-text">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1><a href="/">List</a> <i class="fas fa-angle-right"></i> {{ page.title }}</h1>
+          {% if page.subtitle %}
+          <h2 class="subheading">{{page.formula}}</h2>
+          {% endif %}
+          <span class="meta">
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-7 col-md-10 mx-auto post-container">
+      <div class="mineral_content">
+        <h2 id="General-Information">General Information</h2>
+        <b>Chemical formula:</b> {{page.formula}}
+        {% if page.Z %}<br><b>Number of formula in unit cell:</b> {{page.Z}}{% endif %}
+        {% if page.member %}<br><b>Member of:</b> {{page.member}}{% endif %}
+
+        <br>
+        <b>Space group:</b> {{page.space_group}}
+        <br>
+        <b>Lattice parameters:</b>
+        <br>
+        <table class="lattice_table">
+          <tr>
+            {% for item in page.lattice_parameters%}
+            <th class="lattice">{{item|first}}</th>
+            {% endfor %}
+          </tr>
+          <tr>
+            {% for item in page.lattice_parameters%}
+            <td class="lattice">{{item|last}}</td>
+            {% endfor %}
+          </tr>
+        </table>
+
+        {% if page.ineqv_atom_position %}
+        <h2 class="spacingh3" id="Atom-Coordinates">Atom Coordinates</h2>
+        <h4 id="Inequivalent-atomic-positions">Inequivalent atomic positions</h4>
+        <table class="lattice_table">
+          <tr>
+            <th>Atom</th>
+            <th>x</th>
+            <th>y</th>
+            <th>z</th>
+            <th>site</th>
+          </tr>
+          {% for item in page.ineqv_atom_position%}
+          {% assign line = item | split: " " %}
+          <tr>
+            {% for i in line %}
+            <td class="lattice">{{i}}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </table>
+        {% endif %}
+
+        {% if page.coordi_primitive %}
+        <br>
+        <h4 id="Atoms-in-primitive-cells">Atoms in primitive cells</h4>
+        <table class="lattice_table">
+          <tr>
+            <th> </th>
+            <th>Atom</th>
+            <th>x</th>
+            <th>y</th>
+            <th>z</th>
+          </tr>
+          {% assign counts = 1 %}
+          {% for item in page.coordi_primitive%}
+          <tr>
+            <td class="lattice">{{counts}}</td> {% assign counts = counts | plus: 1 %}
+            {% assign line = item | split: " " %}
+            {% for i in line %}
+            <td class="lattice">{{i}}</td>
+            {% endfor %}
+
+          </tr>
+          {% endfor %}
+
+        </table>
+        {% endif %}
+
+
+        {% if page.structure_img%}
+        <h2 class="spacingh3" id="Crystal-Structure">Crystal Structure</h2>
+        <center><img src="{{page.structure_img | relative_url}}" width="500" height="auto"></center>
+
+        {% endif %}
+
+        {% if page.cif %}
+        <h2 class="spacingh3" id="3D-Interactive-Structure">3D Interactive Structure</h2>
+        {% if page.cif-description %}
+        {{page.cif-description}}
+        {% endif %}
+        {% if page.display-cell %}
+        {% assign disp = page.display-cell %}
+        {% else %}
+        {% assign disp = 1 %}
+        {% endif %}
+        <center>
+          <script>
+            var cifcontent = "{{page.cif|json}}";
+            var display_cell_number = {{ disp }};
+            let cif = ChemDoodle.readCIF(cifcontent, display_cell_number, display_cell_number, display_cell_number);
+            let crystalTransformer = new ChemDoodle.TransformCanvas3D('mineraldisplay', 600, 500);
+            crystalTransformer.specs.set3DRepresentation('Ball and Stick');
+            crystalTransformer.specs.backgroundColor = '#ffffff';
+            crystalTransformer.specs.projectionPerspective_3D = false;
+            crystalTransformer.specs.atoms_displayLabels_3D = true;
+            crystalTransformer.specs.crystals_unitCellLineWidth = 1;
+            crystalTransformer.specs.shapes_color = 'black';
+            crystalTransformer.specs.shapes_lineWidth = 1;
+            crystalTransformer.specs.compass_display = true;
+            crystalTransformer.loadContent([cif.molecule], [cif.unitCell]);
+          </script>
+        </center>
+        {% if page.structure_source %}
+        <br>
+        Structure source:
+        {% if page.structure_source.url %}<a target="_blank" href="{{page.structure_source.url}}">
+          {% else %}
+          {% if page.structure_source.database_code %}
+          {% assign dbcode = page.structure_source.database_code | split: " " %}
+          <a target="_blank" href="http://rruff.geo.arizona.edu/AMS/result.php?key={{dbcode[0]}}%20{{dbcode[1]}}">
+            {% endif %}
+
+            {% endif %}
+            <i class="fas fa-file-download"></i>
+            {% if page.structure_source.name %}{{page.structure_source.name}}{% else %}{{page.name}}{% endif %}
+          </a>
+          {% endif %}
+
+          {% endif %}
+
+          <h2 class="spacingh3" id="Input-Download">Input download</h2>
+          {% if page.input %}
+          <a href="{{page.input  | relative_url}}" download>
+            <p><i class="fas fa-file-download"></i> Download atom coordinates input card for {{page.name}}</p>
+          </a>
+          {% else %}
+          No available atom coordinates input card. Please contact admin.
+
+          {% endif %}
+
+
+
+          <script src="https://cdn.plot.ly/plotly-latest.min.js" type="text/javascript"></script>
+          <br>
+          <br>
+          {{ content }}
+
+      </div>
+
+      <script>
+        EoSfigure = document.getElementById('EoSplot');
+
+        var layout = {
+          title: 'Equation of State: {{page.name}}',
+          xaxis: {
+            title: 'Volume (Å<sup>3</sup>)',
+            // showgrid: false,
+            showline: true,
+            zeroline: false,
+            ticks: "outside",
+          },
+          yaxis: {
+            title: 'Pressure (GPa)',
+            showline: true,
+            zeroline: true,
+            ticks: "outside",
+          },
+          showlegend: true,
+          legend: {
+            x: 1,
+            xanchor: 'right',
+            y: 1
+          },
+        };
+        Plotly.relayout(EoSfigure, layout);
+      </script>
+
+
+
+      <hr>
+
+      <div class="clearfix">
+
+        {% if page.previous.url %}
+        <a class="btn btn-primary float-left"
+          href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
+          data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
+            Mineral</span></a>
+        {% endif %}
+        {% if page.next.url %}
+        <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"
+          data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
+            Mineral</span> &rarr;</a>
+        {% endif %}
+
+      </div>
+
+    </div>
+    <!-- Side Catalog Container -->
+    {% if page.catalog %}
+    <div class=" visible-lg-block sidebar-container catalog-container">
+      <div class="side-catalog">
+        <hr class="hidden-sm hidden-xs">
+        <h5>
+          <a class="catalog-toggle" href="#">{{page.name}}</a>
+        </h5>
+        <ul class="catalog-body"></ul>
+        <h6><a href="/resources/mineralsdatabase/">Go back to List</a></h6>
+        <hr class="hidden-sm hidden-xs">
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,50 @@
+.type{
+    font-size: 150%;
+    border-radius: 10%;
+}
+
+
+.classic{
+    background-color:#E7AB71;
+    color:#fff;
+}
+
+.classic:hover{
+    color: #F6DC90;
+}
+
+.cure{
+    background: #72CBB0;
+    color:#fff;
+}
+.cure:hover{
+    color:#D4F5CD;
+}
+
+.cute{
+    background-color: #FE8395;
+    color: #fff;
+}
+
+.cute:hover{
+    color: #FFD0D5;
+
+}
+
+.cool{
+    background-color: #8FB1FD;
+    color: #fff;
+}
+
+.cool:hover{
+    color:#CFDFFE;
+
+}
+
+.sexy{
+    background:#A771B7;
+    color: #fff;
+}
+.sexy:hover{
+    color:#DABCE8;
+}

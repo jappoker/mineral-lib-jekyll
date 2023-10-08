@@ -1,0 +1,55 @@
+<html lang="en">
+
+<body>
+    <script src="/mineral_input_data/static/js/ChemDoodleWeb.js"></script>
+<script type="text/javascript">
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    var cifData = getParameterByName('cif');
+    // alert(cifData);
+
+    function readcifFile(file) {
+        var rawCIF = new XMLHttpRequest();
+        rawCIF.open("GET", file);
+        rawCIF.onreadystatechange = function () {
+            if (rawCIF.readyState === 4) {
+                if (rawCIF.status === 200 || rawFile.status == 0) {
+                    var CIFContent = rawCIF.responseText;
+                    CIFContent = CIFContent.replace(/"/g, '\x22').replace(/'/g, '\x27');
+                    displaycrystal(CIFContent);
+                }
+            }
+        }
+        rawCIF.send(1);
+    }
+    function displaycrystal(cifcontent) {
+        var cif = ChemDoodle.readCIF(cifcontent, 1, 1, 1);
+        var crystalTransformer = new ChemDoodle.TransformCanvas3D('mineraldisplay', 600, 500);
+        crystalTransformer.specs.set3DRepresentation('Ball and Stick');
+        crystalTransformer.specs.backgroundColor = '#ffffff';
+        crystalTransformer.specs.projectionPerspective_3D = false;
+        crystalTransformer.specs.atoms_displayLabels_3D = true;
+        crystalTransformer.specs.crystals_unitCellLineWidth = 1;
+        crystalTransformer.specs.shapes_color = 'black';
+        crystalTransformer.specs.shapes_lineWidth = 1;
+        crystalTransformer.loadContent([cif.molecule], [cif.unitCell]);
+    }
+    
+    if (cifData) {
+        cifcontent = readcifFile(cifData);
+    } else 
+        {
+            // alert('Incorrect usage!')
+        cifcontent = readcifFile("/mineral_input_data/cif_data/Aegirine_AMS_DATA.cif")};
+</script>
+
+</body>
+
+</html>

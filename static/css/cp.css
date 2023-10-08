@@ -1,0 +1,370 @@
+body {
+  margin: 8px;
+}
+
+li a {
+  font-size: 13px;
+}
+
+.mineral_header a {
+  text-decoration: underline;
+}
+
+.no-bold {
+  font-weight: normal;
+}
+
+.spacingh3 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.style-text {
+  background: none;
+}
+
+.style-text .site-heading,
+.style-text .post-heading,
+.style-text .page-heading {
+  padding: 20px 0 10px;
+  color: #404040;
+}
+
+.style-text .site-heading .subheading,
+.style-text .post-heading .subheading,
+.style-text .page-heading .subheading {
+  margin-bottom: 15px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.post-container th {
+  height: 40px;
+  vertical-align: center;
+  text-align: center;
+  border: 1px solid #bababa;
+  border-bottom: 1px solid #bababa;
+  border-top: 1px solid #bababa;
+  background-color: #e1e1e1;
+  margin: 2px;
+}
+
+.post-container td {
+  height: 40px;
+  min-width: 85px;
+  vertical-align: center;
+  text-align: center;
+  border: 1px solid #bababa;
+  margin: 2px;
+}
+
+.post-container table {
+  table-layout: fixed;
+  width: 100%;
+  /* makes the table stretch to the width of its container */
+}
+
+.lattice_table th {
+  height: 40px;
+  vertical-align: center;
+  text-align: center;
+  border: 1px solid #bababa;
+  background-color: #e1e1e1;
+  margin: 2px;
+}
+
+.lattice_table td {
+  height: 40px;
+  min-width: 65px;
+  width: auto;
+  vertical-align: center;
+  text-align: center;
+  border: 1px solid #bababa;
+  margin: 2px;
+}
+
+.bundlename {
+  min-width: 120px;
+}
+
+
+
+
+.catalog-container {
+  padding: 0px;
+}
+
+.side-catalog {
+  background-color: white;
+  border-radius: 8px;
+  border: 5px solid white;
+}
+
+.side-catalog {
+  display: block;
+  overflow: auto;
+
+  padding-bottom: 40px;
+  width: 225px;
+  position: fixed;
+  top: 50px;
+  right: 200px;
+}
+
+.side-catalog.fixed {
+  position: fixed;
+  top: 50px;
+  right: 200px;
+}
+
+.side-catalog.fold .catalog-toggle::before {
+  content: "+";
+}
+
+.side-catalog.fold .catalog-body {
+  display: none;
+}
+
+.side-catalog .catalog-toggle::before {
+  content: "−";
+  position: relative;
+  margin-right: 5px;
+  bottom: 1px;
+}
+
+.side-catalog .catalog-body {
+  position: relative;
+  list-style: none;
+  height: auto;
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 5px;
+  text-indent: 0;
+}
+
+.side-catalog .catalog-body li {
+  position: relative;
+  list-style: none;
+}
+
+.side-catalog .catalog-body li a {
+  padding-left: 10px;
+  max-width: 220px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: black;
+}
+
+.side-catalog .catalog-body .h1_nav {
+  margin-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.side-catalog .catalog-body .h2_nav {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.side-catalog .catalog-body .h3_nav {
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.side-catalog .catalog-body .h4_nav,
+.side-catalog .catalog-body .h5_nav,
+.side-catalog .catalog-body .h6_nav {
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+.side-catalog .catalog-body .h4_nav a,
+.side-catalog .catalog-body .h5_nav a,
+.side-catalog .catalog-body .h6_nav a {
+  max-width: 170px;
+}
+
+.side-catalog .catalog-body .active {
+  border-radius: 4px;
+  background-color: #F5F5F5;
+}
+
+.side-catalog .catalog-body .active a {
+  color: #0085a1 !important;
+}
+
+@media (max-width: 1200px) {
+  .side-catalog {
+    display: none;
+  }
+}
+
+.heading-menu {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 30px 20px 0px 20px;
+}
+
+.heading-menu :hover {
+  color: #17a2b8;
+  text-decoration: none;
+}
+
+.pplib-table-wrapper table {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.pplib-table {
+  width: 100%;
+}
+
+/* .pplib-name{
+  min-width: 20%;
+}
+.pplib-info{
+  width: 60%;
+} */
+.pplib-download {
+  width: 15%;
+}
+
+.pplib-table th {
+  height: 40px;
+  vertical-align: center;
+  text-align: center;
+  border: 1px solid #bababa;
+  background-color: #e1e1e1;
+  margin: 2px;
+}
+
+.pplib-table td {
+  height: 40px;
+  vertical-align: center;
+  text-align: center;
+  border: 1px solid #bababa;
+  margin: 2px;
+}
+
+.pp-tag {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  display: inline-block;
+  border-radius: 999em;
+  padding: 0 10px 0 10px;
+  line-height: 26px;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 2px;
+}
+
+/* Media Query for tablets and larger */
+@media (min-width: 481px)and (max-width: 768px) {
+  .pp-tag {
+    padding: 0 6px 0 6px;
+    line-height: 18px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 481px) {
+  .pp-tag {
+    padding: 0 5px 0 5px;
+    line-height: 18px;
+    font-size: 10px;
+  }
+}
+
+button.pp-tag {
+  cursor: initial;
+}
+
+.pp-tag-pz,
+.pp-tag-vwn,
+.pp-tag-pbe,
+.pp-tag-blyp,
+.pp-tag-pw91,
+.pp-tag-tpss,
+.pp-tag-coulomb,
+.pp-tag-GGA,
+.pp-tag-LDA {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.pp-tag-pz::before,
+.pp-tag-vwn::before,
+.pp-tag-pbe::before,
+.pp-tag-blyp::before,
+.pp-tag-pw91::before,
+.pp-tag-tpss::before,
+.pp-tag-coulomb::before {}
+
+.pp-tag-s,
+.pp-tag-p,
+.pp-tag-d,
+.pp-tag-f,
+.pp-tag-n {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.pp-tag-ae,
+.pp-tag-mt,
+.pp-tag-bhs,
+.pp-tag-vbc,
+.pp-tag-van,
+.pp-tag-rrkj,
+.pp-tag-rrkjus,
+.pp-tag-kjpaw,
+.pp-tag-bpaw,
+.pp-tag-paw,
+.pp-tag-uspp {
+  border-color: #6610f2;
+  color: #6610f2;
+}
+
+.pp-tag-abinit,
+.pp-tag-qe,
+.pp-tag-atompaw {
+  border-color: #e83e8c;
+  color: #e83e8c;
+}
+
+canvas {
+  border: 2px solid #bababa;
+}
+
+.mineral_content h2 {
+  font-size: 24px;
+}
+
+.mineral_content h3 {
+  font-size: 22px;
+}
+
+.mineral_content h4 {
+  font-size: 18px;
+}
+
+.mineral_content h5 {
+  font-size: 16px;
+}

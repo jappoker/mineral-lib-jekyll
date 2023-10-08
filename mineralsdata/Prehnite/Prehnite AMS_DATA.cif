@@ -1,0 +1,57 @@
+data_global
+_chemical_name_mineral 'Prehnite'
+loop_
+_publ_author_name
+'Detrie T A'
+'Ross N L'
+'Angel R J'
+'Gatta G D'
+_journal_name_full 'European Journal of Mineralogy'
+_journal_volume 21 
+_journal_year 2009
+_journal_page_first 561
+_journal_page_last 570
+_publ_section_title
+;
+ Equation of state and structure of prehnite to 9.8 GPa
+ Note: P = 0.0001 GPa
+;
+_database_code_amcsd 0007288
+_chemical_compound_source 'N'Chwaning II mine, Kuruman, South Africa'
+_chemical_formula_sum 'Ca2 Al2 Si3 O12 H2'
+_cell_length_a 4.6248
+_cell_length_b 5.4825
+_cell_length_c 18.475
+_cell_angle_alpha 90
+_cell_angle_beta 90
+_cell_angle_gamma 90
+_cell_volume 468.442
+_exptl_crystal_density_diffrn      2.924
+_symmetry_space_group_name_H-M 'P n c m'
+loop_
+_space_group_symop_operation_xyz
+  'x,y,z'
+  '-x,1/2+y,1/2+z'
+  'x,1/2-y,1/2-z'
+  'x,y,-z'
+  '-x,-y,z'
+  'x,1/2-y,1/2+z'
+  '-x,1/2+y,1/2-z'
+  '-x,-y,-z'
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Ca   0.00000   0.50000   0.09860   1.00000   0.01300
+Al   0.00000   0.00000   0.00000   1.00000   0.00800
+SiT1   0.50000   0.00000   0.12010   1.00000   0.00700
+AlT2   0.19180   0.75000   0.25000   0.50000   0.00600
+SiT2   0.19180   0.75000   0.25000   0.50000   0.00600
+O1  -0.75140   0.13230   0.07080   1.00000   0.00800
+O2  -0.36880   0.21480   0.17140   1.00000   0.01100
+O3   0.00000   0.50000   0.22700   1.00000   0.01800
+O-H  -0.20600   0.29850   0.00000   1.00000   0.00900
+

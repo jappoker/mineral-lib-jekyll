@@ -1,0 +1,45 @@
+---
+layout: mineral
+title: Al-Perovskite
+date: 0001-01-01 00:00:00 -0400
+catalog: true
+
+name: Al-Perovskite
+formula: Al<sub>2</sub>O<sub>3</sub>
+Z: 4
+space_group: "#62, Pbnm"
+
+lattice_parameters:
+    a (Å): 8.94600
+    b (Å): 9.19000
+    c (Å): 13.66100
+    α (°): 90
+    β (°): 90
+    γ (°): 90
+    volume (Å<sup>3</sup>): 
+
+ineqv_atom_position: 
+    -   Al1    0.510000      0.549000      0.250000     -
+    -   Al2     0.500000      0.000000      0.000000    -
+    -   O1      0.142000      0.412000      0.250000    -
+    -   O2      0.173000      0.176000      0.575000     -
+
+coordi_primitive: 
+
+structure_img: 
+cif: |-
+    #======================================================================\n\n# CRYSTAL DATA\n\n#----------------------------------------------------------------------\n\ndata_VESTA_phase_1\n\n\n_chemical_name_common                  ''\n_cell_length_a                         8.94600\n_cell_length_b                         9.19000\n_cell_length_c                         13.66100\n_cell_angle_alpha                      90\n_cell_angle_beta                       90\n_cell_angle_gamma                      90\n_space_group_name_H-M_alt              'P b n m'\n_space_group_IT_number                 62\n\nloop_\n_space_group_symop_operation_xyz\n   'x, y, z'\n   '-x, -y, -z'\n   'x+1/2, -y+1/2, -z'\n   '-x+1/2, y+1/2, z'\n   '-x, -y, z+1/2'\n   'x, y, -z+1/2'\n   '-x+1/2, y+1/2, -z+1/2'\n   'x+1/2, -y+1/2, z+1/2'\n\nloop_\n   _atom_site_label\n   _atom_site_occupancy\n   _atom_site_fract_x\n   _atom_site_fract_y\n   _atom_site_fract_z\n   _atom_site_adp_type\n   _atom_site_U_iso_or_equiv\n   _atom_site_type_symbol\n   Al1         1.0     0.510000      0.549000      0.250000     Uiso  0.007850 Al\n   Al2        1.0     0.500000      0.000000      0.000000     Uiso  0.005700 Al\n   O1         1.0     0.142000      0.412000      0.250000     Uiso  0.015200 O\n   O2         1.0     0.173000      0.176000      0.575000     Uiso  0.016460 O\n
+
+
+structure_source: 
+    name:
+    url: https://doi.org/10.1126/science.274.5294.1880
+    database_code: 
+
+input:
+
+---
+
+## Reference
+
+K. Thomson, R. M. Wentzcovitch, and M. S. T. Bukowinski, Polymorphs of alumina predicted by first principles: putting pressure on the ruby pressure scale , Science (1996) [https://doi.org/10.1126/science.274.5294.1880](https://doi.org/10.1126/science.274.5294.1880)

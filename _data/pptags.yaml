@@ -1,0 +1,84 @@
+- name: pz
+  info: Perdew-Zunger (LDA) exchange-correlation functional
+
+- name: vwn
+  info: Vosko-Wilk-Nusair (LDA) exchange-correlation functional
+
+- name: pbe
+  info: Perdew-Burke-Ernzerhof (PBE) exchange-correlation functional
+
+- name: blyp
+  info: Becke-Lee-Yang-Parr (BLYP) exchange-correlation functional
+
+- name: pw91
+  info: Perdew-Wang 91 gradient-corrected functional
+
+- name: tpss
+  info: Tao-Perdew-Staroverov-Scuseria (TPSS) meta-GGA
+
+- name: GGA
+  info: Generalized-gradient approximation (GGA)
+
+- name: LDA
+  info: Local density approximation (LDA)
+
+- name: coulomb
+  info: Coulomb bare -Z/r potential
+
+- name: s
+  info: semicore state s in valence
+
+- name: p
+  info: semicore state p in valence
+
+- name: d 
+  info: semicore state d in valence
+
+- name: f
+  info: valence f state in core
+
+- name: "n"
+  info: nonlinear core-correction
+
+- name: ae
+  info: All-Electron (no pseudization) method
+
+- name: mt
+  info: Martins-Troullier method
+
+- name: bhs
+  info: Bachelet-Hamann-Schlueter and derived method
+
+- name: vbc
+  info: Von Barth-Car (direct fit) method
+
+- name: van
+  info: Vanderbilt ultrasoft
+
+- name: rrkj
+  info: Rappe Rabe Kaxiras Joannopoulos (norm-conserving) method
+
+- name: rrkjus
+  info: Rappe Rabe Kaxiras Joannopoulos (ultrasoft) method
+
+- name: kjpaw
+  info: Projector Augmented Wave (Kresse-Joubert paper)
+
+- name: bpaw
+  info: Projector Augmented Wave (original Bloechl recipe)
+
+- name: paw
+  info: Projector Augmented Wave
+
+- name: uspp
+  info: Ultrasoft psudopotential
+
+- name: atompaw
+  info: Input files used for generation of these datasets with ATOMPAW code
+
+- name: abinit
+  info: Use with the Abinit DFT simulation environments
+
+- name: qe
+  info: Use with the Quantum ESPRESSO DFT simulation environments
+

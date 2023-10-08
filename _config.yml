@@ -1,0 +1,28 @@
+title:              MineralsCloud
+email:              
+description:        
+author:             Iris Zhuang
+baseurl:            ""
+url:                "minerallib.iriszhuang.com"
+
+# Social Profiles
+# twitter_username:   SBootstrap
+# github_username:    BlackrockDigital
+# facebook_username:  StartBootstrap
+# linkedin_username:
+
+# Add your google-analytics ID here to activate google analytics
+# google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           100
+paginate_path:      "/minerals/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
+permalink: /:title
+
+exclude: ['pyscripts']

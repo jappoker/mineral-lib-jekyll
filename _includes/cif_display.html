@@ -1,0 +1,27 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<frameset framespacing="0" rows="100,*" frameborder="0" noresize>
+    <frame id="main" name="main" src="{{ 'static/mineral_display.html' | relative_url}}?cif={{include.cif| relative_url}}" target="main" scrolling="no">
+</frameset>
+
+
+</body>
+
